@@ -15,11 +15,11 @@
         <div class="d-flex align-items-center justify-content-center vh-100">
             <div class="text-center">
                 <h1 class="display-1 fw-bold">404</h1>
-                <p class="fs-3"> <span class="text-danger">Opps!</span> Page not found.</p>
+                <p class="fs-3"> <span class="text-danger">Opps!</span> Página no encontrada.</p>
                 <p class="lead">
-                    The page you’re looking for doesn’t exist.
+                La página que estás buscando no existe.
                   </p>
-                <a href="login" class="btn btn-primary">Go Home</a>
+                <a href="{{route('empleados.index')}}" class="btn btn-primary">Regresar</a>
             </div>
         </div>
     </body>

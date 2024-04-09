@@ -75,7 +75,7 @@
       @endforeach
     </tbody>
   </table>
-  {!! $empleados->links('pagination::bootstrap-5') !!}
+
   @else
   <p>No hay empleados para mostrar.</p>
   @endif

@@ -55,16 +55,16 @@
         <div class="form-group  row g-3">
             <div class="col-md-6">
                 <label for="codigo" class="form-label">Código</label>
-                <input type="text" id="codigo" name="codigo" value="{{ old('codigo',$empleado->codigo ?? '') }}" class="form-control{{ $errors->has('codigo') ? ' is-invalid' : '' }}" placeholder="codigo">
+                <input type="text" id="codigo" name="codigo" value="{{ old('codigo',$empleado->codigo ?? '') }}" class="form-control{{ $errors->has('codigo') ? ' is-invalid' : '' }}" >
             </div>
             <div class="col-md-6">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" id="nombre" name="nombre" value="{{ old('nombre', $empleado->nombre ?? '') }}" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" placeholder="nombre">
+                <input type="text" id="nombre" name="nombre" value="{{ old('nombre', $empleado->nombre ?? '') }}" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" >
             </div>
             <div class="col-md-3">
                 <label for="salarioDolares" class="form-label">Salario en dolares</label>
                 <div class="input-group">
-                    <input type="text" id="salarioDolares" name="salarioDolares" value="{{ old('salarioDolares',$empleado->salarioDolares ?? '') }}" class="form-control{{ $errors->has('salarioDolares') ? ' is-invalid' : '' }}" placeholder="salarioDolares" oninput="this.value = this.value.replace(/[^0-9.]/g, '');">
+                    <input type="text" id="salarioDolares" name="salarioDolares" value="{{ old('salarioDolares',$empleado->salarioDolares ?? '') }}" class="form-control{{ $errors->has('salarioDolares') ? ' is-invalid' : '' }}"  oninput="this.value = this.value.replace(/[^0-9.]/g, '');">
                     <div class="input-group-text">USD</div>
 
                 </div>
@@ -73,7 +73,7 @@
             <div class="col-md-3">
                 <label for="salarioPesos" class="form-label">Salarioen pesos</label>
                 <div class="input-group">
-                    <input type="text" id="salarioPesos" name="salarioPesos" value="{{ old('salarioPesos',$empleado->salarioPesos ?? '') }}" class="form-control{{ $errors->has('salarioPesos') ? ' is-invalid' : '' }}" placeholder="salarioPesos" oninput="this.value = this.value.replace(/[^0-9.]/g, '');">
+                    <input type="text" id="salarioPesos" name="salarioPesos" value="{{ old('salarioPesos',$empleado->salarioPesos ?? '') }}" class="form-control{{ $errors->has('salarioPesos') ? ' is-invalid' : '' }}"  oninput="this.value = this.value.replace(/[^0-9.]/g, '');">
                     <div class="input-group-text">MXN</div>
 
                 </div>
@@ -81,23 +81,23 @@
 
             <div class="col-md-6">
                 <label for="direccion" class="form-label">Dirección</label>
-                <input type="text" id="direccion" name="direccion" value="{{ old('direccion',$empleado->direccion ?? '') }}" class="form-control{{ $errors->has('direccion') ? ' is-invalid' : '' }}" placeholder="direccion">
+                <input type="text" id="direccion" name="direccion" value="{{ old('direccion',$empleado->direccion ?? '') }}" class="form-control{{ $errors->has('direccion') ? ' is-invalid' : '' }}" >
             </div>
             <div class="col-md-4">
                 <label for="estado" class="form-label">Estado</label>
-                <input type="text" id="estado" name="estado" value="{{ old('estado',$empleado->estado ?? '') }}" class="form-control{{ $errors->has('estado') ? ' is-invalid' : '' }}" placeholder="estado">
+                <input type="text" id="estado" name="estado" value="{{ old('estado',$empleado->estado ?? '') }}" class="form-control{{ $errors->has('estado') ? ' is-invalid' : '' }}" >
             </div>
             <div class="col-md-4">
                 <label for="ciudad" class="form-label">Ciudad</label>
-                <input type="text" id="ciudad" name="ciudad" value="{{ old('ciudad',$empleado->ciudad ?? '') }}" class="form-control{{ $errors->has('ciudad') ? ' is-invalid' : '' }}" placeholder="ciudad">
+                <input type="text" id="ciudad" name="ciudad" value="{{ old('ciudad',$empleado->ciudad ?? '') }}" class="form-control{{ $errors->has('ciudad') ? ' is-invalid' : '' }}" >
             </div>
             <div class="col-md-4">
                 <label for="celular" class="form-label">Celular</label>
-                <input type="text" id="celular" name="celular" value="{{ old('celular',$empleado->celular ?? '') }}" class="form-control{{ $errors->has('celular') ? ' is-invalid' : '' }}" placeholder="celular" oninput="this.value = this.value.replace(/\D/g,'').slice(0, 10);">
+                <input type="text" id="celular" name="celular" value="{{ old('celular',$empleado->celular ?? '') }}" class="form-control{{ $errors->has('celular') ? ' is-invalid' : '' }}"  oninput="this.value = this.value.replace(/\D/g,'').slice(0, 10);">
             </div>
             <div class="col-md-6">
                 <label for="correo" class="form-label">Correo</label>
-                <input type="text" id="correo" name="correo" value="{{ old('correo',$empleado->correo ?? '') }}" class="form-control{{ $errors->has('correo') ? ' is-invalid' : '' }}" placeholder="correo">
+                <input type="text" id="correo" name="correo" value="{{ old('correo',$empleado->correo ?? '') }}" class="form-control{{ $errors->has('correo') ? ' is-invalid' : '' }}" >
             </div>
             <div class="col-md-6">
                 <label for="activo" class="form-label">Activo</label>
